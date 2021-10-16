@@ -248,7 +248,7 @@
                 items:1
             },
             650:{
-                items:1
+                items:2
             },			
             1024:{
                 items:3

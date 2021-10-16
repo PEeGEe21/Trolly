@@ -17,7 +17,9 @@
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <style>
 
-
+.hero .btn{
+    width: 200px;
+}
 
 
             section{
@@ -200,6 +202,10 @@
                     text-align: left;
                 }
 
+                .hero .btn{
+                    width: 200px;
+                }
+
                 
             }
             @media only screen and (max-width: 568px) {
@@ -305,10 +311,12 @@
 
 
               .h-14 {
-                  
-                  
-    height: 3.5rem;
-}
+                    height: 3.5rem;
+                }
+
+              .h-12 {
+                    height: 3rem;
+                }
         </style>
     </head>
     <body >
@@ -366,20 +374,25 @@
             </div>
         </nav>
 
-        <section class="bg-light no-padding" style="background: url('img/wave1.svg') no-repeat center bottom;">
+        <section class="bg-light no-padding hero" style="background: url('img/wave1.svg') no-repeat center bottom;">
             <div class="container h-100" >
                 <div class="row d-flex align-items-center justify-content-center ">
                     <div class="col-lg-6 col-md-7 col-sm-12 ">
-                        <div class="card h-100 border-0 p-3" style="box-shadow: 0 0 17px 0 rgb(130 122 122 / 10%);  ">
+                        <div class="card h-100 border-0 p-3 p-lg-3" style="box-shadow: 0 0 17px 0 rgb(130 122 122 / 10%);  ">
                             <div class="card-body mb-5 ">
                                 <h1 class="mt-4 mb-3">
                                     We are a well known courier service
                                 </h1>
                                 <span class="lined mb-3"></span>
                                 <p class="mb-4 h6">
-                                    Create an account and start enjoying our service
+                                    Get started, Create an account and start enjoying our service
                                 </p>
-                                <form method="get" class="">
+<!-- <div class="d-block"> -->
+                                    <a href="" class="btn btn-outline-primary h-12 d-flex justify-content-center align-items-center" style="">Get Started</a>
+
+<!-- </div> -->
+
+                                <!-- <form method="get" class="">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">
@@ -390,9 +403,9 @@
                                         <!-- <div class="input-group-append">
                                                 <span class="input-group-text">
                                                 <i class="fa fa-cancel kt-quick-search__close" style="display: none;"></i>
-                                            </span> -->
+                                            </span> 
                                     </div>
-                                </form>
+                                </form> -->
                             </div>
                         </div>
                     </div>
@@ -615,7 +628,7 @@
                             <p class="text-center py-2 mx-0">Our Latest Rates</p>
 
                             <div class="card-body mb-5 ">
-                                <div class="px-5"> 
+                                <div class="px-3 px-lg-5"> 
                                     <div class="text-center">
                                         <h2 class="mt-2 mb-3">
                                             Trolly Courier Service
@@ -653,7 +666,7 @@
 
                             <div class="card-body mb-5 ">
 
-                                <div class="px-5"> 
+                                <div class="px-3 px-lg-5"> 
                                     <div class="text-center">
                                         <h2 class="mt-2 mb-3">
                                             Trolly Courier Service
@@ -786,7 +799,7 @@
                     </div>
                 </div>
                 <div class="row d-flex align-items-center text-center justify-content-center">
-                    <div class="col-12 mt-4 pt-4 ">
+                    <div class="col-12 mt-0 mt-lg-4 pt-2 ">
                         <a href="" class=" btn btn-outline-secondary px-4 py-2 mx-auto h-14 d-flex align-items-center justify-content-center" style="max-width: 420px;">Download App</a>
                     </div>
                 </div>
@@ -800,7 +813,7 @@
                         <h2>Reviews From Customers</h2>
                     </div>
                 </div>
-                <div class="testimonial owl-carousel owl-theme px-5 ">
+                <div class="testimonial owl-carousel owl-theme px-1 px-lg-5 ">
                     <div class="item p-3">
                         <div class="card h-100">
                             <div class="card-body ">
