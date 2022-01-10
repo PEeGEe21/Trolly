@@ -9,14 +9,7 @@
 	"use strict";
 
 
-// 	$(window).stellar({
-// 		responsive: true,
-// 		parallaxBackgrounds: true,
-// 		parallaxElements: true,
-// 		horizontalScrolling: false,
-// 		hideDistantElements: false,
-// 		scrollProperty: 'scroll'
-//   });
+
 
   
   
@@ -36,23 +29,7 @@
 		}, 800);
 	});
 
-// Burger Menu
-// var burgerMenu = function() {
 
-// 	$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-
-// 		event.preventDefault();
-
-// 		if ( $('#ftco-nav').is(':visible') ) {
-// 			$(this).removeClass('active');
-// 		} else {
-// 			$(this).addClass('active');	
-// 		}
-		
-// 	});
-
-// };
-// burgerMenu();
 
 
 
@@ -111,49 +88,64 @@
 	});
 
 
-	// Scrollax
-//    $.Scrollax();
+	var hamb = $('.hamburger');
+	var menuActive = false;
+	var menu = $('.menu');
 
-    
-    
-    
-    // var contentWayPoint = function() {
-	// 	var i = 0;
-	// 	$('.ftco-animate').waypoint( function( direction ) {
 
-	// 		if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
-	// 			i++;
+	initMenu();
 
-	// 			$(this.element).addClass('item-animate');
-	// 			setTimeout(function(){
 
-	// 				$('body .ftco-animate.item-animate').each(function(k){
-	// 					var el = $(this);
-	// 					setTimeout( function () {
-	// 						var effect = el.data('animate-effect');
-	// 						if ( effect === 'fadeIn') {
-	// 							el.addClass('fadeIn ftco-animated');
-	// 						} else if ( effect === 'fadeInLeft') {
-	// 							el.addClass('fadeInLeft ftco-animated');
-	// 						} else if ( effect === 'fadeInRight') {
-	// 							el.addClass('fadeInRight ftco-animated');
-	// 						} else {
-	// 							el.addClass('fadeInUp ftco-animated');
-	// 						}
-	// 						el.removeClass('item-animate');
-	// 					},  k * 50, 'easeInOutExpo' );
-	// 				});
-					
-	// 			}, 100);
-				
-	// 		}
+	/* 
 
-	// 	} , { offset: '95%' } );
-	// };
-	// contentWayPoint();
+	5. Init Menu
 
-	
+	*/
+
+	function initMenu()
+	{
+		if(hamb.length)
+		{
+			if(menu.length)
+			{
+				hamb.on('click', function()
+				{
+					if(menuActive)
+					{
+						closeMenu();
+					}
+					else
+					{
+						openMenu();
+					}
+				});	
+
+				$('.menu_close').on('click', function()
+				{
+					if(menuActive)
+					{
+						closeMenu();
+					}
+					else
+					{
+						openMenu();
+					}
+				});
+			}
+		}
+	}
+
+	function closeMenu()
+	{
+		menu.removeClass('active');
+		menuActive = false;
+	}
+
+	function openMenu()
+	{
+		menu.addClass('active');
+		menuActive = true;
+	}
 
 
 	// scroll
@@ -262,6 +254,16 @@
 
 	
 
+
+
+		// :: 9.0 Sticky Active Code
+		if ($.fn.sticky) {
+			$(".transition-header").sticky({
+				topSpacing: 0
+			});
+		}
+	
+	
 
 
 })(jQuery);

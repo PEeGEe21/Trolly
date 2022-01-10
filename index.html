@@ -14,321 +14,69 @@
         <link href="css/fontawesome5/css/all.css" type="text/css" rel="stylesheet">
         <link href="css/owl.carousel.css" type="text/css" rel="stylesheet">
         <link href="css/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="css/custom.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <style>
 
-.hero .btn{
-    width: 200px;
-}
 
 
-            section{
-                padding: 7rem 0 7rem 0;
-            }
-
-            section.no-padding{
-                padding: 7rem 0 7rem 0;
-            }
-
-            .no-padding-bottom{
-                padding: 3rem 0 3rem 0;
-            }
-
-            .input-group-text{
-                background: #fff;
-                border-right: 0;
-            }
-
-            .input-group{
-                width: 70%;
-            }
-
-            input[type='text']{
-                border-left: 0;
-                outline: none;
-                padding-left: 0;
-                
-            }        
-            input[type='text']:focus{
-                box-shadow: none;
-                outline: none;
-                border-color: #ced4da;
-            }       
-
-            .lined{
-                height: 10px;
-                width: 50px;
-                
-                display: inline-block;
-                background-color: rgb(121, 6, 6);
-            }
-
-            .info-bx .card{
-                box-shadow: 0 10px 5px 0 rgb(130 122 122 / 20%);
-                border-radius: 10px;
-                /* box-shadow: 0 0 15px 0 rgb(29 25 0 / 20%); */
-            }
-
-
-            .sponsor-logo {
-    width: 80px;
-    height: 60px;
-    border-radius: 50%;
-    color: #fff;
-
-    display: inline-block;
-    text-align: center;
-    line-height: 90px;
-    position: relative;
-    transition: all 0.5s;
-}
-
-
-.header-profile-user {
-    height: 50px;
-    width: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 5px;
-}
-
-            .item-bx .item::after {
-                content: "";
-                height: 44px;
-                width: 1px;
-                position: absolute;
-                right: 0;
-                top: 22px;
-                background-color: #d0d0d0;
-            }
-
-            .testimonial .card{
-                box-shadow: 0 0 17px 0 rgb(130 122 122 / 10%);
-
-            }
-
-
-            .no-padding-everywhere{
-                padding: 1rem 0 1rem 0;
-
-            }
-
-
-
-
-            .footer {
-                background: #1d2024;
-                padding: 6.5rem 0 0;
-            }
-            
-            .bottom-footer{
-                margin-top: 6.5rem;
-                background: #16181c;
-
-            }
-
-            
-            .footer .copyright{
-                text-align: center;
-                transition: all .2s ease;
-            }
-
-            .footer .copyright a{
-                transition: all .2s ease;
-                text-decoration: underline;
-
-            }
-
-            .bottom-footer .contact {
-                text-align: right;
-            }
-
-            .bottom-footer .contact a {
-                color: #fff;
-            }
-
-            .footer .footer-link {
-                color: #ccc;
-                position: relative;
-                padding-left: 1rem;
-                transition: all 0.3s;
-                font-size: 0.9rem;
-                font-weight: 300;
-            }
-
-            .footer .footer-link:hover {
-                color: rgb(101, 221, 236);
-                text-decoration: none;
-                transition: all 0.3s;
-            }
-
-            .bottom-footer .social-link:hover{
-                color: #fff;
-                transition: all .2s ease;
-            }
-
-            .bottom-footer .social-link{
-                transition: all .2s ease;
-                color: #6c757d ;
-            }
-
-            .top-footer li:before {
-                content: '';
-                display: inline-block;
-                width: 5px;
-                height: 5px;
-                border-radius: 50%;
-                background-color: #9d9d9d;
-                /* margin-right: 3px; */
-                position: relative;
-                bottom: 3px;
-            }
-
-
-
-                @media only screen and (max-width: 767px) {
-                    section.no-padding{
-                    padding: 5rem 0 5rem 0;
-                } 
-
-                .input-group{
-                    width: 100%;
-                }
-
-                .bottom-footer .contact {
-                    text-align: left;
-                }
-
-                .footer .copyright {
-                    text-align: left;
-                }
-
-                .hero .btn{
-                    width: 200px;
-                }
-
-                
-            }
-            @media only screen and (max-width: 568px) {
-                .item-bx .item::after {
-                    content: none !important;
-                }
-            }
-
-
-            .img-loop:hover{
-                transform: scale(1.12) ;
-                transition: all .3s ease;
-
-            }
-
-            /* .img-loop:hover img{
-                box-shadow: 0 0 17px 0 rgb(130 122 122 / 10%);
-
-
-            } */
-
-            .img-loop{
-                transition: all .3s ease;
-            }
-
-
-            .testimonial .owl-nav .owl-prev , 
-            .testimonial .owl-nav .owl-next {    
-                position: absolute;
-    top: 50%;
-    /* width: calc(var(--swiper-navigation-size) / 44 * 27); */
-    /* height: var(--swiper-navigation-size); */
-    /* margin-top: calc(0px - (var(--swiper-navigation-size) / 2)); */
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
-
-            }
-
-
-            .testimonial .owl-nav .owl-next span, .testimonial .owl-nav .owl-prev span {
-    font-size: 18px;
-}
-.testimonial .owl-nav .owl-prev {
-    left: 0px;
-    transition: left 300ms ease-out;
-}
-.testimonial .owl-nav .owl-next {
-
-    right: 0px;
-    transition: right 300ms ease-out;
-
-
-}
-
-.testimonial .owl-nav .owl-prev , 
-.testimonial .owl-nav .owl-next {
-    top: 40%;
-    margin-top: 0;
-    background: #fff;
-    height: 40px;
-    width: 40px;
-    z-index: 2;
-    border: solid 1px #d0d0d0;
-    border-radius: 2px solid #333;
-    box-shadow:  0 1px 10px 0 rgba(0, 0, 0, 0.2);
-    /* box-shadow: 0 0 17px 0 rgb(130 122 122 / 20%); */
-
-}
-
-.owl-carousel .owl-next:focus, 
-.owl-carousel .owl-prev:focus{
-    outline: none;
-    border: 0;
-}
-.testimonial .owl-carousel .owl-nav button.owl-prev:focus span, 
-.testimonial .owl-carousel .owl-nav button.owl-next:focus-visible span,  
-.testimonial .owl-carousel button.owl-dot:focus {
-    outline: none;
-    border: 0;
-}
-
-.testimonial .item .media img {
-    width: 48px;
-    height: 48px;
-}
-
-
-
-
-            .arrow-link:hover span i {
-              left: 10px;
-              opacity: .7;
-              }
-            
-            .arrow-link span i {
-              -webkit-transition: .3s all ease;
-              -o-transition: .3s all ease;
-              transition: .3s all ease;
-              position: relative;
-              left: 0; 
-              font-size: 12px;
-              opacity: 0;
-              /* justify-items:; */
-	          }
-
-
-
-              .h-14 {
-                    height: 3.5rem;
-                }
-
-              .h-12 {
-                    height: 3rem;
-                }
         </style>
     </head>
     <body >
+        <div class="menu d-flex flex-column align-items-center justify-content-center">
+            <div class="menu_content">
+                <!-- <div class="cross_1 d-flex flex-column align-items-center justify-content-center"><img src="img/logo/logo1.svg" alt=""></div> -->
+                <form action="#" class="menu_search_form">
+                    <input type="search" class="menu_search_input" placeholder="Search" required="required">
+                    <button class="menu_search_button d-flex flex-column align-items-center justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="20px" height="20px">
+                        <path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+                    </svg>
+                </button>
+                </form>
+                <nav class="menu_nav">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="">How Trolly Works</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Tour Our App</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light text-black z-10 py-2 transition-header ease-linear duration-300 absolute top-0 left-0 bg-white" id="ftco-navbar">
+        <header>
+        <div class="top_bar d-none d-lg-block">
+			<div class="container">
+				<div class="row">
+					<div class="col top_bar_content d-flex flex-row align-items-center justify-content-start">
+
+						<div class="event_timer">
+
+                            <div>
+                                <i class="fas fa-check main-color mr-2"></i>We Are A Leading Provider Of Courier Services.
+                            </div>							
+                            
+						</div>
+						<div class="topbar-right topbar-widgets text-right clearfix ml-auto d-flex flex-row align-items-center justify-content-content">
+							<div class="widget induscity-office-location-widget">
+                                <div class="office-location clearfix d-flex align-items-center justify-content-content">
+                                    <ul class="office-1 topbar-office active mb-0" id="cargohub-office-1">
+                                        <li class="phone d-inline-flex mr-2 align-items-center justify-content-center"><i class="fas fa-phone-volume mr-2"></i>+(234) 9028950691</li>
+                                        <li class="time d-inline-flex align-items-center justify-content-center"><i class="fas fa-envelope mr-2"></i>Mailpraiseudeh@gmail.com </li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <nav class="navbar navbar-expand-lg navbar-light text-black z-10 py-2 transition-header bg-white" id="ftco-navbar">
             <div class="container d-flex justify-content-between">
                 <div>
                     <div class="">
@@ -339,7 +87,7 @@
 
                 </div>
                 
-                <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle hamburger" >
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="ftco-nav">
@@ -381,23 +129,35 @@
             </div>
         </nav>
 
-        <section class="bg-light no-padding hero" style="background: url('img/wave1.svg') no-repeat center bottom;">
+        </header>
+
+        
+
+        <!-- url('img/bg/bg8.jpg') no-repeat center center; background-size: cover; -->
+        <!-- style="background: url('img/bg/bg8.jpg') no-repeat center center; background-size: cover;" -->
+        <section class="bg-light no-padding hero" style="background: linear-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0, 0.8)), url('img/bg/bg7.jpg') no-repeat center center; background-size: cover;">
             <div class="container h-100" >
-                <div class="row d-flex align-items-center justify-content-center ">
-                    <div class="col-lg-6 col-md-7 col-sm-12 ">
-                        <div class="card h-100 border-0 p-3 p-lg-3" style="box-shadow: 0 0 17px 0 rgb(130 122 122 / 10%);  ">
-                            <div class="card-body mb-5 ">
-                                <h1 class="mt-4 mb-3">
+                <div class="row d-flex align-items-center justify-content-center " >
+                    <div class="col-xl-12 col-lg-7 col-md-12 col-sm-12 ">
+                        <div class="h-100 border-0 p-3 mb-5 p-lg-3" >
+                            <!-- <div class="  "> -->
+                                <p class="mb-4 h6 subtext">
                                     We are a well known courier service
+                                </p>
+                                <h1 class="mt-4 mb-3 maintext">
+                                    Trolly Courier Services
                                 </h1>
-                                <span class="lined mb-3"></span>
-                                <p class="mb-4 h6">
+                                <!-- <span class="lined mb-3"></span> -->
+                                <p class="mb-4 h6 paratext">
                                     Get started, Create an account and start enjoying our service
                                 </p>
-<!-- <div class="d-block"> -->
-                                    <a href="" class="btn btn-outline-primary h-12 d-flex justify-content-center align-items-center" style="">Get Started</a>
+                                <div class="hero-link ">
+                                    <a href="" class="btn text-white btn-outline-dark d-flex justify-content-between align-items-center arrow-link">Get Started <span>
+                                            <i class="fa fa-arrow-right mini-icon"></i>
+                                        </span>
+                                    </a>
 
-<!-- </div> -->
+                                </div>
 
                                 <!-- <form method="get" class="">
                                     <div class="input-group">
@@ -414,13 +174,13 @@
                                     </div>
                                 </form> -->
                             </div>
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="col-lg-6 col-md-5 col-sm-12 d-none d-lg-block">
-                        <div class="pl-4">
+                        <!-- <div class="pl-4">
                             <img src="img/groovy.png" class="img-fluid">
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
             <!-- <div class="wave">
@@ -487,9 +247,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card mb-5 h-100 border-0">
                             <div class="card-body ">
-                                <h4>
+                                <h5>
                                     Get Started in minutes
-                                </h4>
+                                </h5>
                                 <p class="mb-4">
                                     Create an account and start enjoying our service
                                 </p>
@@ -499,9 +259,9 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card mb-5 h-100 border-0">
                             <div class="card-body  ">
-                                <h4>
+                                <h5>
                                     Get Started in minutes
-                                </h4>
+                                </h5>
                                 <p class="mb-4">
                                     Create an account and start enjoying our service
                                 </p>
@@ -510,10 +270,10 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card mb-5 h-100 border-0" >
-                            <div class="card-body">
-                                <h4>
+                            <div class="card-body ">
+                                <h5>
                                     Get Started in minutes
-                                </h4>
+                                </h5>
                                 <p class="mb-4">
                                     Create an account and start enjoying our service
                                 </p>
@@ -1065,7 +825,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.js"></script>
-
+        <script src="js/sticky.js"></script>
         <script src="js/main.js"></script>
 
 
